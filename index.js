@@ -1,5 +1,5 @@
 //var Db = require('./dboperation');
-//var Customer = require('./customers');
+//var Customer = require('./commonclass');
 const dboperation = require('./dboperation');
 const commmonlib = require('./commonlib');
 var express = require('express');
@@ -95,3 +95,5 @@ router.route('/customers').post((req,res)=>{
 var port = process.env.PORT || 3000;
 app.listen(port);
 console.log('API Service is runnning at port: ' + port + ' and listening');
+
+module.exports = router
